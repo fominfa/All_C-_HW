@@ -11,5 +11,6 @@ public:
     }
     virtual void drive() = 0;
     virtual void stop() = 0;
-    virtual void print_wheels() = 0;
+    void print_wheels() const { std::cout << name << " have "
+        << wheel_count << " wheels"; }
 };
